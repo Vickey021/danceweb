@@ -1,0 +1,331 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+header .logo img {
+  max-width: 51px;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  border-radius: 2rem;
+}
+
+header .logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e8c731;
+  transform: translateY(-3px);
+  background-color: rgba(232, 199, 49, 0.1);
+  border-radius: 4px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #f39c12, #e74c3c);  /* Gradient background */
+  color: white;  /* White text color for contrast */
+  border-radius: 10px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #f5f5f5;
+}
+
+/* Mission Section */
+#mission {
+  background-color: #aadbe7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#mission h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase; /* Adding a more dynamic effect */
+}
+
+#mission p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Instructors Section */
+#instructors {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: bisque;
+}
+
+
+
+
+#instructors h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e74c3c;  /* A bright color to stand out */
+}
+
+.instructor-profile {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-profile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Enhanced shadow on hover */
+}
+
+.instructor-profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.instructor-profile h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.instructor-profile p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Dance Styles Section */
+#dance-styles {
+  padding: 40px 20px;
+  background-color: #eabff1;
+  text-align: center;
+}
+
+#dance-styles h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e74c3c;  /* Adding contrast with a strong red */
+}
+
+#dance-styles ul {
+  list-style: none;
+  padding: 0;
+}
+
+#dance-styles li {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#dance-styles li:hover {
+  background-color: #f39c12; /* Highlight on hover */
+  color: white;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #9b59b6, #8e44ad);  /* Colorful gradient */
+  color: white;
+}
+
+#testimonials h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+blockquote p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+blockquote cite {
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .navbar.active .navbar-links {
+    display: block;
+  }
+
+  #instructors .instructor-profile {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #dance-styles ul {
+    padding: 0;
+  }
+
+  #dance-styles li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+}/* Hamburger Menu Styling */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 93px;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 20px 0; */
+    gap: 0px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    height: 251px;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .navbar-links a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+

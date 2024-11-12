@@ -1,0 +1,393 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+header .logo img {
+  max-width: 51px;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  border-radius: 2rem;
+}
+
+header .logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e8c731;
+  transform: translateY(-3px);
+  background-color: rgba(232, 199, 49, 0.1);
+  border-radius: 4px;
+}
+
+/* Main Section */
+main {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e9e56c, #c50d1e);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Welcome Section */
+#welcome {
+  background-color: #e8c731;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  color: white;
+}
+
+#welcome h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#welcome p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+#welcome .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#welcome .btn:hover {
+  background-color: #e8c731;
+}
+
+/* Who We Are Section */
+#who-we-are {
+  background-color: beige;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+#who-we-are h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#who-we-are p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+#who-we-are .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#who-we-are .btn:hover {
+  background-color: #e8c731;
+}
+
+#who-we-are img {
+  width: 25%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+#who-we-are img:hover {
+  transform: scale(1.05);
+}
+
+/* Courses Section */
+#courses {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: beige;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+#courses:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+#courses h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#courses p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* Course Box Section */
+.course-options {
+  display: flex;
+  justify-content: center; /* Centers the course boxes */
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  background-color: #e8c731;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.course-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Footer Section */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #courses h2 {
+    font-size: 2rem;
+  }
+
+  #courses p {
+    font-size: 1.1rem;
+  }
+
+  .course-options {
+    flex-direction: column;
+    align-items: center; /* Centers the course boxes on smaller screens */
+    gap: 20px;
+  }
+
+  .course-box {
+    width: 80%;
+    padding: 20px;
+  }
+
+  #who-we-are img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .navbar-links a {
+    font-size: 15px;
+  }
+
+  main {
+    padding: 50px 15px;
+  }
+
+  #courses {
+    padding: 20px 15px;
+  }
+
+  .course-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #courses h2 {
+    font-size: 1.8rem;
+  }
+
+  #courses p {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  #who-we-are img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #who-we-are h2 {
+    font-size: 1.8rem;
+  }
+
+  #who-we-are p {
+    font-size: 1rem;
+  }
+
+  .navbar-links {
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    font-size: 18px;
+  }
+
+  .course-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #courses h2 {
+    font-size: 1.4rem;
+  }
+
+  #courses p {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+/* Hamburger Menu Styling */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide by default on mobile */
+    position: absolute;
+    top: 94px;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    gap: 10px;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Ensure it appears above other content */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .navbar-links a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
