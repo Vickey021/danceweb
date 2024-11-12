@@ -6,7 +6,7 @@ const { Client } = require('pg'); // Import PostgreSQL client
 const dbConfig = {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    password: String(process.env.DB_PASSWORD), 
     database: process.env.DB_NAME,
     port: 5432, // Default PostgreSQL port
     ssl: {
