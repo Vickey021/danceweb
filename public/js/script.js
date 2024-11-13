@@ -135,7 +135,7 @@ document.getElementById("contact-Form").addEventListener("submit", async functio
           alert("Thank you! Your message has been sent.");
 
           // Clear form fields after submission
-          document.getElementById("contactForm").reset();
+          document.getElementById("contact-Form").reset();
       } else {
           // Handle errors from the backend
           const errorData = await response.json();
