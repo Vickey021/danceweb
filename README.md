@@ -14,7 +14,7 @@ Frontend: HTML, CSS, JavaScript
 Backend: PostgreSQL Neon (for contact form integration)
 Deployment: Vercel (for hosting the website)
 
-##Live Website
+## Live Website
 You can view the live website here:[Dance App live](https://danceweb-inky.vercel.app)
 
 Feel free to explore the code and contribute if you have any improvements or ideas!
