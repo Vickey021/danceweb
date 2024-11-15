@@ -9,7 +9,7 @@ Workshop Section: Provides information about upcoming workshops and allows users
 Course Enrollment: Users can view available dance courses and inquire about them via the contact form.
 Contact Form: Integrated with PostgreSQL Neon to store user inquiries and feedback.
 
-##Technologies Used
+## Technologies Used
 Frontend: HTML, CSS, JavaScript
 Backend: PostgreSQL Neon (for contact form integration)
 Deployment: Vercel (for hosting the website)
@@ -17,8 +17,4 @@ Deployment: Vercel (for hosting the website)
 ##Live Website
 You can view the live website here:[Dance App live](https://danceweb-inky.vercel.app)
 
-
-
-
-Contributing
 Feel free to explore the code and contribute if you have any improvements or ideas!
